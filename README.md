@@ -56,13 +56,15 @@ These results are consistent with published benchmarks on the same dataset (comm
 Python, pandas, scikit-learn, XGBoost, LightGBM, SHAP, Streamlit, matplotlib/seaborn
 
 ## Project Structure
+```
 customer-churn-prediction/
-├── data/raw/ # Original dataset
-├── data/processed/splits/ # Train-test splits used by the app
-├── notebooks/ # EDA, preprocessing, and modeling notebooks
-├── src/app.py # Streamlit dashboard
-├── models/ # Trained models, scaler, SHAP artifacts
+├── data/raw/                  # Original dataset
+├── data/processed/splits/     # Train-test splits used by the app
+├── notebooks/                 # EDA, preprocessing, and modeling notebooks
+├── src/app.py                 # Streamlit dashboard
+├── models/                    # Trained models, scaler, SHAP artifacts
 └── requirements.txt
+```
 
 ## Run Locally
 
