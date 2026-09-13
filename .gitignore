@@ -16,6 +16,7 @@ data/processed/
 *.pkl
 *.csv
 !models/**/*.pkl
+!data/processed/splits/*.pkl
 
 # IDE
 .vscode/
