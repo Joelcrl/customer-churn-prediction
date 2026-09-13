@@ -15,6 +15,7 @@ env/
 data/processed/
 *.pkl
 *.csv
+!models/**/*.pkl
 
 # IDE
 .vscode/
