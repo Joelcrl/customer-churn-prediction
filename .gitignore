@@ -12,9 +12,9 @@ env/
 *.ipynb_checkpoints
 
 # Data
-data/processed/
+data/processed/*.csv
+data/*.csv
 *.pkl
-*.csv
 !models/**/*.pkl
 !data/processed/splits/*.pkl
 
