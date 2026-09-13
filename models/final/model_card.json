@@ -1,6 +1,6 @@
 {
   "model_name": "Customer Churn Stacking Ensemble",
-  "created_date": "2026-09-13",
+  "created_date": "2026-09-14",
   "model_type": "StackingClassifier (LogisticRegression + XGBoost + RandomForest, meta-learner: LogisticRegression)",
   "dataset": "Telco Customer Churn (Kaggle)",
   "train_size": 4930,
