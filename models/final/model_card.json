@@ -1,0 +1,31 @@
+{
+  "model_name": "Customer Churn Stacking Ensemble",
+  "created_date": "2026-09-13",
+  "model_type": "StackingClassifier (LogisticRegression + XGBoost + RandomForest, meta-learner: LogisticRegression)",
+  "dataset": "Telco Customer Churn (Kaggle)",
+  "train_size": 4930,
+  "test_size": 2113,
+  "num_features": 33,
+  "performance": {
+    "roc_auc_test": 0.849,
+    "roc_auc_cv_mean": 0.849,
+    "roc_auc_cv_std": 0.01,
+    "accuracy": 0.754,
+    "precision": 0.524,
+    "recall": 0.807,
+    "f1": 0.636
+  },
+  "top_features_shap": [
+    "Contract_Two year",
+    "tenure",
+    "InternetService_Fiber optic",
+    "Contract_One year",
+    "MonthlyCharges"
+  ],
+  "known_limitations": [
+    "Random Forest base learner shows overfitting tendency (train-test gap 0.084) even after tuning",
+    "Class imbalance handled via class weights; precision remains moderate (~0.52) due to recall-prioritized threshold",
+    "SHAP explainability computed on XGBoost base learner as a proxy, not directly on the stacking ensemble, due to TreeExplainer limitations with meta-estimators",
+    "Engineered features (avg_charge_per_tenure, total_services, high_risk_combo) provided minimal performance gain over base features"
+  ]
+}
