@@ -2,6 +2,8 @@
 
 **[Live Demo](https://joel-customer-churn-prediction.streamlit.app/)** | Built by Joel Chriscendo Rahardjo Liem
 
+![Dashboard Screenshot](docs/dashboard_screenshot.png)
+
 An end-to-end machine learning project that predicts customer churn for a telecom company, explains individual predictions with SHAP, and surfaces the results through an interactive dashboard for retention decision-making.
 
 ## Problem
@@ -54,3 +56,25 @@ These results are consistent with published benchmarks on the same dataset (comm
 Python, pandas, scikit-learn, XGBoost, LightGBM, SHAP, Streamlit, matplotlib/seaborn
 
 ## Project Structure
+customer-churn-prediction/
+├── data/raw/ # Original dataset
+├── data/processed/splits/ # Train-test splits used by the app
+├── notebooks/ # EDA, preprocessing, and modeling notebooks
+├── src/app.py # Streamlit dashboard
+├── models/ # Trained models, scaler, SHAP artifacts
+└── requirements.txt
+
+## Run Locally
+
+```bash
+git clone https://github.com/Joelcrl/customer-churn-prediction.git
+cd customer-churn-prediction
+pip install -r requirements.txt
+streamlit run src/app.py
+```
+
+## Future Improvements
+
+- Automated preprocessing pipeline for raw customer data input
+- Deep dive into SHAP explainability directly on the stacking meta-learner
+- A/B test framework to validate retention campaign impact against the model's predictions
