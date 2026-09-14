@@ -18,12 +18,12 @@ Telecom companies lose recurring revenue when customers churn. Identifying at-ri
 
 ## Approach
 
-1. **EDA** — identified tenure, contract type, internet service type, and payment method as the strongest churn signals
-2. **Preprocessing** — categorical encoding, feature scaling, class imbalance handled via class weights
-3. **Feature engineering** — added interaction features based on EDA insights (limited additional lift observed, documented as a finding rather than discarded silently)
-4. **Modeling** — trained and tuned Logistic Regression, Random Forest, XGBoost, and LightGBM; combined the best performers into a Stacking Ensemble
-5. **Explainability** — SHAP values (on the XGBoost base learner) used to validate model behavior against manual EDA findings and explain individual predictions
-6. **Deployment** — interactive Streamlit dashboard with three views: portfolio-level summary, batch prediction, and individual customer explanation
+1. **EDA**: Identified tenure, contract type, internet service type, and payment method as the strongest churn signals
+2. **Preprocessing**: Categorical encoding, feature scaling, class imbalance handled via class weights
+3. **Feature engineering**: Added interaction features based on EDA insights (limited additional lift observed, documented as a finding rather than discarded silently)
+4. **Modeling**: Trained and tuned Logistic Regression, Random Forest, XGBoost, and LightGBM; combined the best performers into a Stacking Ensemble
+5. **Explainability**: SHAP values (on the XGBoost base learner) used to validate model behavior against manual EDA findings and explain individual predictions
+6. **Deployment**: Interactive Streamlit dashboard with three views: portfolio-level summary, batch prediction, and individual customer explanation
 
 ## Results
 
