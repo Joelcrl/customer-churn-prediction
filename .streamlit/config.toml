@@ -1,6 +1,28 @@
 [theme]
 base = "dark"
-primaryColor = "#ff4b4b"
-backgroundColor = "#0e1117"
-secondaryBackgroundColor = "#262730"
-textColor = "#fafafa"
+
+# Palette: deep navy surfaces with a calm blue accent
+primaryColor = "#3987e5"
+backgroundColor = "#0d1117"
+secondaryBackgroundColor = "#161b26"
+textColor = "#e6e8ee"
+borderColor = "#262d3d"
+linkColor = "#6da7ec"
+dataframeBorderColor = "#262d3d"
+dataframeHeaderBackgroundColor = "#1b2130"
+showWidgetBorder = true
+showSidebarBorder = true
+
+font = "Inter:https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+headingFont = "Plus Jakarta Sans:https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+codeFont = "JetBrains Mono:https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap"
+headingFontWeights = [800, 700, 700, 600, 600, 600]
+metricValueFontWeight = 700
+
+# Shape
+baseRadius = "medium"
+buttonRadius = "medium"
+
+[theme.sidebar]
+backgroundColor = "#111621"
+secondaryBackgroundColor = "#1b2130"
